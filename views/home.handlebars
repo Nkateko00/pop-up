@@ -5,38 +5,52 @@
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
     </div>
-<form action="/cities" method="POST">
-    <div class="cities">
-        <label for="cars">Choose A City:</label>
+    <form action="/region" method="POST">
+        <div class="pics">
+            <img src="dbn.jpg" width="23%" alt="durban">
+            <img src="cape-town.jpg" width="23%" alt="cape town">
+            <img src="joburg.jpg" width="23%" alt="durban">
+        </div>
+        <div class="ads">
+            <span>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia, dignissimos
+                illo. Dicta facere tenetur
+                nulla inci
+            </span>
+            <span>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia, dignissimos
+                illo. Dicta facere tenetur
+                nulla inci
+            </span>
+            <span>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Mollitia, dignissimos
+                illo. Dicta facere tenetur
+                nulla inci
+            </span>
+            <br>
+        </div>
 
-                        <label>
-                    <input type="radio" name="selector" value="english">English
-                </label>
-                <label>
-                    <input type="radio" name="selector" value="French">French
-                </label>
-                <label>
-                    <input type="radio" name="selector" value="Spanish">Spanish
-                </label>
+        <div class="cities">
 
+            <label>
+                <input type="radio" name="selector" value="cpt"><a href="/cape-town"></a>Cape Town
+            </label>
+            <label>
+                <input type="radio" name="selector" value="jhb">Johannesburg
+            </label>
+            <label>
+                <input type="radio" name="selector" value="dbn">Durban
+            </label>
+
+            <button id='cityBtn' type="submit">Select</a></button>
+
+
+        </div>
+    </form>
+    <div class="popUps">
+        <div>{{rentals}}</div>
+        <div>{{poi}}</div>
+        <div>{{finance}}</div>
     </div>
-</form>
-    <div class="ads">
-        <span>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Mollitia, dignissimos 
-            illo. Dicta facere tenetur
-            nulla inci
-        </span>
-         <span>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Mollitia, dignissimos 
-            illo. Dicta facere tenetur
-            nulla inci
-        </span>
-          <span>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Mollitia, dignissimos 
-            illo. Dicta facere tenetur
-            nulla inci
-        </span>
-        <br>
-    </div>
+
 </div>

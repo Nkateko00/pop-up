@@ -33,14 +33,32 @@ app.use(bodyParser.json())
 //routes
 app.get('/', function (req, res) {
 
-    res.render('home'); 
+    res.render('home');
 })
 
-app.post('/cities')
+app.post('/region', function (req, res) {
+    var town = req.body.selector
+
+    if (town === 'cpt') {
+        res.render('cpt')
+
+        // res.redirect('/cpt')
+    }
+    else if (town === 'dbn') {
+        res.render('dbn')
+    }
+    else if (town === 'jhb') {
+        res.render('jhb')
+    }
+    console.log(town)
+})
+app.get('/cape', function (req, res) {
+    res.redirect('/')
+})
 
 //Port setup
 const PORT = process.env.PORT || 3008;
 
- app.listen(PORT, function () {
+app.listen(PORT, function () {
     console.log('App starting on port :' + PORT);
 });
