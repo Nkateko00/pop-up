@@ -43,3 +43,6 @@ body {
     padding: 4px;
     border-radius: 2em;
   }
+  .pics {
+    display: flex;
+  }
