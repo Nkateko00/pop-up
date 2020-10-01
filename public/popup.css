@@ -16,6 +16,9 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
+  .logo{
+    font-family: 'Architects Daughter', cursive;
+  }
   
   .topnav a:hover {
     background-color: #ddd;
@@ -34,15 +37,37 @@ body {
   .ads{
     margin: 2em; 
     display: flex;
-    padding-block-end: 2em;
+    padding: 2em;
+    /* padding-block-end: 2em; */
   }
   .ads span{
-   
     border: 1px solid black;
     width: auto;
-    padding: 4px;
+    padding: 1em;
+    margin : 2em;
     border-radius: 2em;
   }
   .pics {
     display: flex;
+    padding : 2em;
+    margin : 4em; 
   }
+  .pics img{
+
+    margin : 2em;
+  }
+  .btn button{
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    background-color: red;
+  }
+ .logo{
+   text-align: center;
+ }
+  /* .btn{
+    padding: 1em;
+    color: white;
+    border-radius: 0.5em;
+    background-color: red;
+  } */

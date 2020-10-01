@@ -4,48 +4,46 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
+         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </div>
     <form action="/region" method="POST">
-        <div class="pics">
-            <img src="dbn.jpg" width="23%" alt="durban">
-            <img src="cape-town.jpg" width="23%" alt="cape town">
-            <img src="joburg.jpg" width="23%" alt="durban">
-        </div>
+    <div class="logo">
+     <h1>POP-UPS!</h1>
+    </div>
+    <hr>
         <div class="ads">
-            <span>Lorem ipsum dolor sit amet consectetur
+            <p>
+                Cape Town is a port city on South Africa’s southwest coast, on a peninsula
+                 beneath the imposing Table Mountain. 
+                 Slowly rotating cable cars climb to the mountain’s flat top,
+                from which there are sweeping views of the city,
+                the busy harbor and boats heading for Robben Island, 
+                the notorious prison that once held Nelson Mandela,
+                which is now a living museum
+            </p>
+           
+                <p>   Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Mollitia, dignissimos
                 illo. Dicta facere tenetur
                 nulla inci
-            </span>
-            <span>Lorem ipsum dolor sit amet consectetur
+                </p>
+            
+                   <p>   Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Mollitia, dignissimos
                 illo. Dicta facere tenetur
                 nulla inci
-            </span>
-            <span>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia, dignissimos
-                illo. Dicta facere tenetur
-                nulla inci
-            </span>
-            <br>
+    </p>
+                </div>
+           
+        <div class="pics">
+         
+          <a href="/cpt"><img src="cape-town.jpg"  alt="cape town"></a>
+            <a href="/jhb" ><img src="joburg.jpg" alt="joburg" > </a>
+            <a href="/dbn" > <img src="dbn.jpg"  alt="durban" ></a>
         </div>
 
-        <div class="cities">
+        
 
-            <label>
-                <input type="radio" name="selector" value="cpt"><a href="/cape-town"></a>Cape Town
-            </label>
-            <label>
-                <input type="radio" name="selector" value="jhb">Johannesburg
-            </label>
-            <label>
-                <input type="radio" name="selector" value="dbn">Durban
-            </label>
-
-            <button id='cityBtn' type="submit">Select</a></button>
-
-
-        </div>
     </form>
     <div class="popUps">
         <div>{{rentals}}</div>
