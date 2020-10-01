@@ -19,16 +19,7 @@ module.exports = function () {
         await pool.query(`update popup set counter = counter+1 where item = $1`, [city])
     }
 
-    //select town
-   
 
-
-
-
-
-        000000001             0*//+/////98+9+0
-        3
-        +9
     }
 
 
@@ -38,8 +29,4 @@ module.exports = function () {
 
     }
 
-
-}
-
-// `select * distict type from popup where reqion = 'cpt'`
 

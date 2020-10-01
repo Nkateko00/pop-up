@@ -35,9 +35,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   .ads{
-    margin: 2em; 
+    margin: auto; 
     display: flex;
-    padding: 2em;
+    padding: auto;
     /* padding-block-end: 2em; */
   }
   .ads span{
@@ -48,7 +48,7 @@ body {
     border-radius: 2em;
   }
   .pics {
-    display: flex;
+    /* display: flex; */
     padding : 2em;
     margin : 4em; 
   }
@@ -71,3 +71,6 @@ body {
     border-radius: 0.5em;
     background-color: red;
   } */
+  .row{
+    margin: 3em;
+  }
