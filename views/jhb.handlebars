@@ -6,10 +6,10 @@
         let barGraph = new Chart(CHART, {
             type: 'bar',
             data: {
-                labels: ['House Rentals', 'Cars Rented', 'Business Seminars', 'Forex And Investing', 'Clubs', 'Markets'],
+                labels: ['Cape Town', 'Johannesburg', 'Durban'],
                 datasets: [{
                     label: '#Most Popular By Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [0, {{info}}, 0],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -41,12 +41,9 @@
         });
     </script>
     <form action="/jhb" method="GET">
-
-       
-
         <div class="ads">
             <span>
-                <a href="/jhb/rentals">
+                <a href="/rentals/jhb">
                     <h2>Rentals</h2>
                 </a>
                 <div><img src="joburg.jpg" width="23%" alt="johannesburg"></div>
@@ -54,20 +51,9 @@
                 Sequi neque ducimus dolorum a sunt, quam perferendis in eaque, deleniti quis repudiandae temporibus
                 ipsam totam?
             </span>
-
-
-            <span>
-                <h2>Entertainment</h2>
+            <span><a href="/entertainment/jhb">
+                <h2>Entertainment</h2></a>
                 <div><img src="dbn.jpg" width="23%" alt="durban"></div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab fugit in aspernatur blanditiis.
-                Sequi neque ducimus dolorum a sunt, quam perferendis in eaque, deleniti quis repudiandae temporibus
-                ipsam totam?
-
-            </span>
-
-            <span>
-                <h2>Finances</h2>
-                <div><img src="cape-town.jpg" width="23%" alt="cape town"></div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab fugit in aspernatur blanditiis.
                 Sequi neque ducimus dolorum a sunt, quam perferendis in eaque, deleniti quis repudiandae temporibus
                 ipsam totam?

@@ -3,7 +3,7 @@
     <script>const CHART = document.getElementById("barGraph");
         console.log(CHART);
         let barGraph = new Chart(CHART, {
-            type: 'bar',
+            type: 'line',
             data: {
                 labels: ['House Rentals', 'Cars Rented', 'Business Seminars', 'Forex And Investing', 'Clubs', 'Markets'],
                 datasets: [{
@@ -39,24 +39,35 @@
             }
         });
     </script>
-    <form action="/rentals/jhb" method="GET">
-        <h1>Rentals</h1>
+    <a href="">
+        <h1></h1>
+    </a>
+    <form action="/rentals/jhb/cars" method="GET">
+        <a href="/rentals/jhb/cars/popstars">
+            <h1>Cars</h1>
+        </a>
         <div class="ads">
+            <span><a href="/rentals/jhb/cars/popstars">
+            <h2>popstars</h2>
+        </a>
+                <img src="joburg.jpg" width="23%" alt="johannesburg">
+            </span>
+            <span> <img src="dbn.jpg" width="23%" alt="durban">
+
+            </span>
+            <span> <img src="cape-town.jpg" width="23%" alt="cape town">
+
+            </span>
             <span>
-                <a href="/rentals/jhb/houses">
-                    <h2>Home Rentals</h2>
-                </a>
-                {{!-- <div> </div> --}}
+                <img src="joburg.jpg" width="23%" alt="johannesburg">
             </span>
+            <span> <img src="dbn.jpg" width="23%" alt="durban">
 
-
-            <span><a href="/rentals/jhb/cars">
-                    <h2>Car Rentals</h2>
-                </a>
-                {{!-- <img src="joburg.jpg" width="23%" alt="johannesburg"> --}}
             </span>
+            <span> <img src="cape-town.jpg" width="23%" alt="cape town">
 
+            </span>
             <br>
         </div>
+    </form>
 </div>
-</form>
