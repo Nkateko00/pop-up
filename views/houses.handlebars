@@ -3,7 +3,7 @@
     <script>const CHART = document.getElementById("barGraph");
         console.log(CHART);
         let barGraph = new Chart(CHART, {
-            type: 'bar',
+            type: 'line',
             data: {
                 labels: ['House Rentals', 'Cars Rented', 'Business Seminars', 'Forex And Investing', 'Clubs', 'Markets'],
                 datasets: [{
@@ -39,9 +39,10 @@
             }
         });
     </script>
-    <form action="/jhb" method="GET">
-        <a href="/jhb/rentals">
-            <h1>Johannesburg</h1>
+   <a href=""><h1></h1></a>
+   <form action="/jhb/rentals/houses" method="GET">
+        <a href="/jhb/rentals/houses/popstars">
+            <h1>Houses</h1>
         </a>
         <div>{{rentals}}</div>
         <div>{{poi}}</div>
