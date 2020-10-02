@@ -7,8 +7,8 @@ const flash = require('express-flash');
 const session = require('express-session');
 let app = express()
 var Pop = require('./popup')
-
-
+const flash = require('express-flash');
+app.use(flash());
 var pop = Pop()
 
 //setup handlebars ,Body-parser and public
