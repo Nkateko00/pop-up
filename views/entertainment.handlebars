@@ -1,14 +1,15 @@
 <div class="row">
+    <h1 style="text-align: center;">Entertainment</h1>
     <canvas id="barGraph" height="20" width="100"></canvas>
     <script>const CHART = document.getElementById("barGraph");
         console.log(CHART);
         let barGraph = new Chart(CHART, {
             type: 'bar',
             data: {
-                labels: ['Cape Town', 'Johannesburg', 'Durban'],
+                labels: ['Markets', 'Clubs'],
                 datasets: [{
                     label: '#Most Popular By Votes',
-                    data: [12, 0, 1],
+                    data: [12, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -39,12 +40,23 @@
             }
         });
     </script>
-    <form action="/cape" method="GET">
-        <a href="">
-            <h1 style="text-align: center;">Cape Town</h1>
-        </a>
-        <div>{{rentals}}</div>
-        <div>{{poi}}</div>
-        <div>{{finance}}</div>
-    </form>
+    <form action="/entertainment/jhb" method="GET">
+        <div class="ads">
+            <span>
+                <a href="/entertainment/jhb/markets">
+                    <h2>Markets</h2>
+                </a>
+                {{!-- <div> </div> --}}
+            </span>
+
+
+            <span><a href="/rentals/jhb/clubs">
+                    <h2>Clubs</h2>
+                </a>
+                {{!-- <img src="joburg.jpg" width="23%" alt="johannesburg"> --}}
+            </span>
+
+            <br>
+        </div>
 </div>
+</form>

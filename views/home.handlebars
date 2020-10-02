@@ -1,54 +1,64 @@
 <div class="row">
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    </div>
+    <!-- Top nav-->
     <form action="/region" method="POST">
         <div class="logo">
             <h1>POP-UPS!</h1>
+            <p>The place that allows you make extra cash per day on your extras on your own time when needed!</p>
         </div>
         <hr>
         <div class="ads">
-            <p>
-                Cape Town is a port city on South Africa’s southwest coast, on a peninsula
-                beneath the imposing Table Mountain.
-                Slowly rotating cable cars climb to the mountain’s flat top,
-                from which there are sweeping views of the city,
-                the busy harbor and boats heading for Robben Island,
-                the notorious prison that once held Nelson Mandela,
-                which is now a living museum
-            </p>
+            <div class="ads">
 
-            <p> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia, dignissimos
-                illo. Dicta facere tenetur
-                nulla inci
-            </p>
+                <div><img src="cape-town.jpg" alt="cape town">
+                    <h2>Cape Town</h2>
+                    <p>Cape Town is a port city on South Africa’s southwest coast, on a peninsula
+                        beneath the imposing Table Mountain.
+                        Slowly rotating cable cars climb to the mountain’s flat top,
+                        from which there are sweeping views of the city,
+                        the busy harbor and boats heading for Robben Island,
+                        the notorious prison that once held Nelson Mandela,
+                        which is now a living museum
+                    </p>
+                </div>
+            </div>
+            <div class="ads">
 
-            <p> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Mollitia, dignissimos
-                illo. Dicta facere tenetur
-                nulla inci
-            </p>
+                <div><img src="joburg.jpg" width="90%" alt="joburg">
+                    <h2>Johannesburg</h2>
+                    <p>Cape Town is a port city on South Africa’s southwest coast, on a peninsula
+                        beneath the imposing Table Mountain.
+                        Slowly rotating cable cars climb to the mountain’s flat top,
+                        from which there are sweeping views of the city,
+                        the busy harbor and boats heading for Robben Island,
+                        the notorious prison that once held Nelson Mandela,
+                        which is now a living museum
+                    </p>
+                </div>
+            </div>
+            <div class="ads">
+                <div><img src="dbn.jpg" alt="durban">
+                    <h2>Durban</h2>
+                    <p>Cape Town is a port city on South Africa’s southwest coast, on a peninsula
+                        beneath the imposing Table Mountain.
+                        Slowly rotating cable cars climb to the mountain’s flat top,
+                        from which there are sweeping views of the city,
+                        the busy harbor and boats heading for Robben Island,
+                        the notorious prison that once held Nelson Mandela,
+                        which is now a living museum</p>
+                </div>
+            </div>
+            <label>
         </div>
-
-        <div class="pics">
-
-            <a href="cpt"><img src="cape-town.jpg" alt="cape town"></a>
-            <a href="jhb" value="jhb"><img src="joburg.jpg" alt="joburg"> </a>
-            <a href="/dbn"> <img src="dbn.jpg" alt="durban"></a>
-        </div>
-
-
-
+        <div class="radios">
+            <label>
+                <input type="radio" name="selector" value="cpt">Cape Town
+            </label>
+            <label>
+                <input type="radio" name="selector" value="jhb">Johannesburg
+            </label>
+            <label>
+                <input type="radio" name="selector" value="dbn">Durban
+            </label></div>
+        <div class="selBtn"><button id='cityBtn' type="submit">Select</a></button></div>
     </form>
-    <div class="popUps">
-        <div>{{rentals}}</div>
-        <div>{{poi}}</div>
-        <div>{{finance}}</div>
-    </div>
-
 </div>

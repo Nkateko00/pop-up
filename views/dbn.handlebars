@@ -5,10 +5,10 @@
         let barGraph = new Chart(CHART, {
             type: 'bar',
             data: {
-                labels: ['House Rentals', 'Cars Rented', 'Business Seminars', 'Forex And Investing', 'Clubs', 'Markets'],
+                labels: ['Cape Town', 'Johannesburg', 'Durban'],
                 datasets: [{
                     label: '#Most Popular By Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [0, 1, 9],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -41,7 +41,7 @@
     </script>
     <form action="/dbn" method="GET">
        <a href="">
-            <h1>Durban</h1>
+            <h1 style="text-align: center;">Durban</h1>
         </a>
         <div>{{rentals}}</div>
         <div>{{poi}}</div>

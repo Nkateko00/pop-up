@@ -1,11 +1,12 @@
 <div class="row">
+    <h1 style="text-align: center;">Houses</h1>
     <canvas id="barGraph" height="20" width="100"></canvas>
     <script>const CHART = document.getElementById("barGraph");
         console.log(CHART);
         let barGraph = new Chart(CHART, {
-            type: 'line',
+            type: 'bar',
             data: {
-                labels: ['House Rentals', 'Cars Rented', 'Business Seminars', 'Forex And Investing', 'Clubs', 'Markets'],
+                labels: ['Bachelor', 'Medium', 'More Spacious'],
                 datasets: [{
                     label: '#Most Popular By Votes',
                     data: [12, 19, 3, 5, 2, 3],
@@ -39,13 +40,22 @@
             }
         });
     </script>
-   <a href=""><h1></h1></a>
-   <form action="/jhb/rentals/houses" method="GET">
-        <a href="/jhb/rentals/houses/popstars">
-            <h1>Houses</h1>
-        </a>
-        <div>{{rentals}}</div>
-        <div>{{poi}}</div>
-        <div>{{finance}}</div>
+    <form action="/rentals/jhb/houses" method="GET">
+        {{!-- <a href="">
+        </a> --}}
+        <div class="ads">
+            <span>
+             <a href="/rentals/jhb/houses/popstars"><img src="" width="23%" alt="home"></a>
+            </span>
+            <span> <a href=""><img src="" width="23%" alt="home2"></a>
+            </span>
+            <span> <a href=""><img src="" width="23%" alt="home3"></a>
+            </span>
+            <span>
+               <a href=""> <img src="" width="23%" alt="home4"></a>
+            </span>
+        
+            <br>
+        </div>
     </form>
 </div>

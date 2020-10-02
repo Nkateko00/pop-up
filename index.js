@@ -6,7 +6,10 @@ const bodyParser = require('body-parser'); //require body parser for htm functio
 const flash = require('express-flash');
 const session = require('express-session');
 let app = express()
+var Pop = require('./popup')
 
+
+var pop = Pop()
 
 //setup handlebars ,Body-parser and public
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
@@ -39,6 +42,11 @@ app.get('/', function(req, res) {
 app.post('/region', function(req, res) {
     var town = req.body.selector
 
+
+    req.session.currentTown = town;
+    // await pop.addCity(town)
+
+
     if (town === 'cpt') {
         res.render('cpt')
 
@@ -48,20 +56,36 @@ app.post('/region', function(req, res) {
     } else if (town === 'jhb') {
         res.render('jhb')
     }
-    console.log(town)
 })
-app.get('/jhb/rentals', function(req, res) {
+
+app.get('/rentals/jhb', function(req, res) {
+    req.session.currentType = 'rentals'
+        //await pop.addPopup(req.session.currentTown, 'rentals')
     res.render('rentals')
+});
+
+app.get('/rentals/jhb/:rentalType', function(req, res) {
+    const rentalType = req.params.rentalType;
+
+    // await pop.addPopType(req.session.currentTown, req.session.currentType, rentalType)
+    res.render(rentalType)
 })
-app.get('/jhb/rentals/houses', function(req, res) {
-    res.render('houses')
-})
-app.get('/jhb/rentals/houses/popstars', function(req, res) {
+app.get('/rentals/jhb/houses/popstars', function(req, res) {
     res.render('popstars')
 })
 
+app.get('/beapop', function(req, res) {
+    res.render('beapop')
+})
+app.get('/housecat', function(req, res) {
+    res.render('housecat')
+})
+app.get('/entertainment/jhb', function(req, res) {
+    res.render('entertainment')
+})
+
 //Port setup
-const PORT = process.env.PORT || 3008;
+const PORT = process.env.PORT || 3010;
 
 app.listen(PORT, function() {
     console.log('App starting on port :' + PORT);
